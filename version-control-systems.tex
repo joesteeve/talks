@@ -1,0 +1,94 @@
+\documentclass{beamer}
+% \usetheme{Boadilla}
+
+\title{Version control systems (VCS)}
+\author{Joe Steeve}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{What is a VCS}
+  \begin{enumerate}
+  \item A tool to maintain change history to source code over a period
+    of time.
+  \item Provides mechanisms for teams to collaborate on a single
+    project.
+  \item Enables developers to branch out and merge back.
+  \item Enables developers to rollback to old versions.
+  \item Enables auditability and traceability.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Types of VCS}
+
+  \begin{description}
+  \item[Centralised VCS] Has a central server which serialises the
+    commit history.
+  \item[Distributed VCS] Decentralised. Commit history is maintained by
+    pushing/pulling changesets from different repositories.
+  \end{description}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Centralised VCS}
+
+  \begin{enumerate}
+  \item Examples: RCS, CVS, Subversion.
+  \item Most operations require access to the central server.
+  \item Too much central control.
+  \item Some VCS partially support decentralisation.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Distributed VCS}
+  \begin{enumerate}
+  \item Examples: git, mercurial, bazaar, monotone, Darcs
+  \item Every developer gets a copy of the entire repository.
+  \item Commits are done locally.
+  \item Changes are pushed between repositories.
+  \item Flexible enough for community development
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{git}
+  \begin{enumerate}
+  \item Git was created by Linus Torvalds for maintaining the Linux
+    kernel.
+  \item ``Git'' is a slang for ``Unpleasant person'' in British
+    English. But really, there is no meaning.
+  \item Close to 90\% adoption
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Git, Concepts (1)}
+  \begin{enumerate}
+  \item Clone: Copying a remote repository locally.
+  \item Staging: Adding the changes to the index.
+  \item Commit: Commit staged changes to the local repository.
+  \item Push/Pull: Push/Pull changesets to/from a remote repository.
+  \item Branch: A diverged line of development with a history of its
+    own, for a particular topic.
+  \item Merge: After a topic is finished, it can be merged to the main
+    branch.
+  \item Tag: A named reference to a particular commit. Can be
+    cryptographically signed.
+  \item Pull request: A request to peers to review the changes in a
+    topic branch and merge it into the main branch.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  -EoF-
+\end{frame}
+
+\end{document}
+
